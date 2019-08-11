@@ -1,0 +1,14 @@
+<resources>
+    <string name="thryll_organiser_id">5d441245e51c5373e9479566</string>
+    <string name="app_name">Thryll Sample Integration</string>
+
+
+    <string name="title_home">Home</string>
+    <string name="title_events">Events</string>
+    <string name="tab_list">List</string>
+    <string name="tab_grid">Grid</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

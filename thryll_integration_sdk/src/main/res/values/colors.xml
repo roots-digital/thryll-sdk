@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background">#fff4f9ff</color>
+    <color name="background_black">#ff2e2728</color>
+    <color name="black_semi_transparent">#99000000</color>
+    <color name="facebook_blue">#ff004f9f</color>
+    <color name="green">#ff00e700</color>
+    <color name="grey">#ff606060</color>
+    <color name="half_black">#ff808080</color>
+    <color name="light_blue">#ff96dde0</color>
+    <color name="thryll_red">#b71214</color>
+    <color name="red">#ffdd0858</color>
+    <color name="translucent">#45000000</color>
+    <color name="white">#fffafafa</color>
+    <color name="white_pressed">#fff1f1f1</color>
+    <color name="white_semi_transparent">#99f2f3f3</color>
+</resources>
