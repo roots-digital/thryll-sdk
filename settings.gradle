@@ -1,1 +1,1 @@
-include ':app', ':thryll_integration_sdk'
+include ':app', ':thryll_integration'

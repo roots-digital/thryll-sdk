@@ -2,7 +2,7 @@ package tech.rootsdigital.thryll_sample_integration;
 
 import android.app.Application;
 
-import tech.rootsdigital.thryll_integration_sdk.Thryll;
+import tech.rootsdigital.thryll_integration.Thryll;
 
 public class IntegrationSampleApplication  extends Application {
 

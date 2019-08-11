@@ -1,16 +1,11 @@
 package tech.rootsdigital.thryll_sample_integration;
 
-import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,10 +14,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.tabs.TabLayout;
 
-import tech.rootsdigital.thryll_integration_sdk.Thryll;
-import tech.rootsdigital.thryll_integration_sdk.data.models.Event;
-import tech.rootsdigital.thryll_integration_sdk.data.models.RequestResult;
-import tech.rootsdigital.thryll_integration_sdk.interfaces.EventsRequestListener;
+import tech.rootsdigital.thryll_integration.Thryll;
+import tech.rootsdigital.thryll_integration.data.models.RequestResult;
+import tech.rootsdigital.thryll_integration.interfaces.EventsRequestListener;
 
 
 public class EventsFragment extends Fragment {

@@ -1,20 +1,15 @@
 package tech.rootsdigital.thryll_sample_integration;
 
-import android.app.Activity;
-import android.content.Context;
 import android.graphics.Bitmap;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
@@ -37,8 +32,8 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        ProgressBar progressBar = view.findViewById(tech.rootsdigital.thryll_integration_sdk.R.id.progress_bar);
-        webview = view.findViewById(tech.rootsdigital.thryll_integration_sdk.R.id.webview);
+        ProgressBar progressBar = view.findViewById(tech.rootsdigital.thryll_integration.R.id.progress_bar);
+        webview = view.findViewById(tech.rootsdigital.thryll_integration.R.id.webview);
 
         webview.getSettings().setJavaScriptEnabled(true);
 

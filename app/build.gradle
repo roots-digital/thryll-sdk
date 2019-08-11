@@ -34,5 +34,5 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
 
-    implementation project(':thryll_integration_sdk')
+    implementation project(':thryll_integration')
 }
