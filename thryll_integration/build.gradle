@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
+//apply plugin: 'com.github.dcendents.android-maven'
+//apply plugin: 'com.jfrog.bintray'
 
 android {
     compileSdkVersion 28
@@ -49,83 +49,83 @@ dependencies {
     implementation('com.github.bumptech.glide:glide:4.8.0')
 }
 
-task sourcesJar(type: Jar) {
-    from android.sourceSets.main.java.srcDirs
-    classifier = 'sources'
-}
-
-task javadoc(type: Javadoc) {
-    source = android.sourceSets.main.java.srcDirs
-    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-}
-
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
-    from javadoc.destinationDir
-}
-
-artifacts {
-    archives javadocJar
-    archives sourcesJar
-}
-
-group = 'tech.rootsdigital.thryll_integration'
-version = '0.1.1'
-
-install {
-    repositories.mavenInstaller {
-        pom.project {
-            name 'Thryll Events SDK'
-            description 'A library for integrating thryll into your android app so you can show' +
-                    'uploaded events'
-            url 'https://github.com/roots-digital/thryll-events-sdk'
-            inceptionYear '2019'
-
-            packaging 'aar'
-            groupId 'tech.rootsdigital.thryll_integration'
-            artifactId 'events-sdk'
-            version '0.1.1'
-
-            licenses {
-                license {
-                    name 'The MIT License (MIT)'
-                    url 'https://opensource.org/licenses/MIT'
-                }
-            }
-            scm {
-                connection 'https://github.com/roots-digital/thryll-events-sdk.git'
-                url 'https://github.com/roots-digital/thryll-events-sdk'
-
-            }
-            developers {
-                developer {
-                    id = 'roots-digital'
-                    name 'Roots Digital'
-                }
-            }
-        }
-    }
-}
-
-Properties bintrayProperties = new Properties()
-bintrayProperties.load(project.rootProject.file('bintray.properties').newDataInputStream())
-
-bintray {
-    user = bintrayProperties.getProperty('user')
-    key = bintrayProperties.get('key')
-    configurations = ['archives']
-    pkg {
-        repo = 'thryll'
-        name = 'events-sdk'
-        userOrg = 'roots-digital'
-        licenses = ['MIT']
-        vcsUrl = 'https://github.com/guardian/piper.git'
-        publish = true
-        version {
-            name = '0.1.1'
-            desc = 'Thryll Events SDK 0.1.1'
-            released = new Date()
-            vcsTag = 'v0.1.1'
-        }
-    }
-}
+//task sourcesJar(type: Jar) {
+//    from android.sourceSets.main.java.srcDirs
+//    classifier = 'sources'
+//}
+//
+//task javadoc(type: Javadoc) {
+//    source = android.sourceSets.main.java.srcDirs
+//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+//}
+//
+//task javadocJar(type: Jar, dependsOn: javadoc) {
+//    classifier = 'javadoc'
+//    from javadoc.destinationDir
+//}
+//
+//artifacts {
+//    archives javadocJar
+//    archives sourcesJar
+//}
+//
+//group = 'tech.rootsdigital.thryll_integration'
+//version = '0.1.1'
+//
+//install {
+//    repositories.mavenInstaller {
+//        pom.project {
+//            name 'Thryll Events SDK'
+//            description 'A library for integrating thryll into your android app so you can show' +
+//                    'uploaded events'
+//            url 'https://github.com/roots-digital/thryll-events-sdk'
+//            inceptionYear '2019'
+//
+//            packaging 'aar'
+//            groupId 'tech.rootsdigital.thryll_integration'
+//            artifactId 'events-sdk'
+//            version '0.1.1'
+//
+//            licenses {
+//                license {
+//                    name 'The MIT License (MIT)'
+//                    url 'https://opensource.org/licenses/MIT'
+//                }
+//            }
+//            scm {
+//                connection 'https://github.com/roots-digital/thryll-events-sdk.git'
+//                url 'https://github.com/roots-digital/thryll-events-sdk'
+//
+//            }
+//            developers {
+//                developer {
+//                    id = 'roots-digital'
+//                    name 'Roots Digital'
+//                }
+//            }
+//        }
+//    }
+//}
+//
+//Properties bintrayProperties = new Properties()
+//bintrayProperties.load(project.rootProject.file('bintray.properties').newDataInputStream())
+//
+//bintray {
+//    user = bintrayProperties.getProperty('user')
+//    key = bintrayProperties.get('key')
+//    configurations = ['archives']
+//    pkg {
+//        repo = 'thryll'
+//        name = 'events-sdk'
+//        userOrg = 'roots-digital'
+//        licenses = ['MIT']
+//        vcsUrl = 'https://github.com/guardian/piper.git'
+//        publish = true
+//        version {
+//            name = '0.1.1'
+//            desc = 'Thryll Events SDK 0.1.1'
+//            released = new Date()
+//            vcsTag = 'v0.1.1'
+//        }
+//    }
+//}
